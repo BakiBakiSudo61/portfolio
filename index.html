@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のポートフォリオ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+    <!-- MacOS風の動く背景 -->
+    <div class="animated-background">
+        <video id="background-video" autoplay loop muted playsinline>
+            <source src="images/AdobeStock_409123036.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#works" class="hover-effect">Works</a></li>
+                <li><a href="#skills" class="hover-effect">Skills</a></li>
+                <li><a href="#profile" class="hover-effect">Profile</a></li>
+                <li><a href="#contact" class="hover-effect">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- メインビジュアル -->
+        <section id="mainvisual">
+            <div class="container fade-in">
+                <h2 class="hover-effect">須藤 悠海</h2>
+                <p>アプリ開発など投稿予定</p>
+            </div>
+        </section>
+        
+        <!-- Works セクション -->
+        <section id="works">
+            <div class="container fade-in">
+                <h2>Works</h2>
+                <ul class="works-list">
+                    <li>
+                        <img src="images/work1.jpg" alt="作品1">
+                        <h3 class="hover-effect">作品タイトル1</h3>
+                        <p>作品の説明文をここに入れます。</p>
+                    </li>
+                    <li>
+                        <img src="images/work2.jpg" alt="作品2">
+                        <h3 class="hover-effect">作品タイトル2</h3>
+                        <p>作品の説明文をここに入れます。</p>
+                    </li>
+                    <li>
+                        <img src="images/work3.jpg" alt="作品3">
+                        <h3 class="hover-effect">作品タイトル3</h3>
+                        <p>作品の説明文をここに入れます。</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Skills セクション -->
+        <section id="skills">
+            <div class="container fade-in">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li class="hover-effect">Python</li>
+                    <li class="hover-effect">Pandas</li>
+                    <li class="hover-effect">Pytorch</li>
+                    <li class="hover-effect">matplotlib</li>
+                    <li class="hover-effect">seaborn</li>
+                    <li class="hover-effect">numpy</li>
+                </ul>
+                <br>
+                <h2>Qualifications</h2>
+                <ul class="skills-list">
+                    <li class="hover-effect">工事担任者第二級デジタル通信</li>
+                    <li class="hover-effect">基本情報技術者</li>
+                    <li class="hover-effect">JDLA DeepLearning for GENERAL</li>
+                    <li class="hover-effect">情報活用試験１級</li>
+
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Profile セクション -->
+        <section id="profile">
+            <div class="container fade-in">
+                <h2>Profile</h2>
+                <div class="profile-content">
+                    <img src="images/IMG_3850.JPG" alt="プロフィール画像">
+                    <div class="profile-text">
+                        <h3 class="hover-effect">バキバキ須童</h3>
+                        <p>現在JDLA認定プログラムを受講中！<br>
+                            SIGNATEやKaggleのコンペでメダル取りたい！<br>
+                            応用情報受かってないかなぁ。。。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact セクション -->
+        <section id="contact">
+            <div class="container fade-in">
+                <h2>Contact</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="hover-effect">送信する</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+        <div class="to-top">
+            <a href="#top" class="hover-effect">TOP</a>
+        </div>
+    </footer>
+    
+    <!-- カーソル追従要素 -->
+    <div class="cursor-text"></div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
